@@ -33,7 +33,7 @@ function createBot() {
     console.error('[BOT] Erreur:', error);
   });
 
-  bot.on('kicked', (reason) => => {
+  bot.on('kicked', (reason) =>  {
     console.log('[BOT] Bot kické:', reason);
     console.log('[BOT] Reconnexion dans 5 secondes...');
     setTimeout(createBot, 5000);
